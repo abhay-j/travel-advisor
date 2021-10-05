@@ -5,7 +5,7 @@ import { Paper, Typography, useMediaQuery } from "@material-ui/core";
 import { LocationOnOutlined } from "@material-ui/icons";
 import { Rating } from "@material-ui/lab";
 import useStyles from "./styles";
-require("dotenv").config();
+// require("dotenv").config();
 const Map = ({
   coordinates,
   setCoordinates,
@@ -19,7 +19,7 @@ const Map = ({
   return (
     <div className={classes.mapContainer}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
+        bootstrapURLKeys={{ key: "AIzaSyD-PpdrMqPg9ttluJi-UAOKNuyucjj4U1g" }}
         defaultCenter={{ lat: 0, lng: 0 }}
         center={coordinates}
         defaultZoom={14}

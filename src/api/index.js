@@ -1,6 +1,6 @@
 import axios from "axios";
 // const URL = "https://travel-advisor.p.rapidapi.com/hotels/list-in-boundary";
-require("dotenv").config();
+// require("dotenv").config();
 const getPlacesData = async (type, ne, sw) => {
   try {
     const {
@@ -18,8 +18,7 @@ const getPlacesData = async (type, ne, sw) => {
         },
         headers: {
           "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
-          "x-rapidapi-key":
-            process.env.REACT_APP_RAPIDAPI_TRAVEL_ADVISOR_API_key,
+          "x-rapidapi-key": "AIzaSyD-PpdrMqPg9ttluJi-UAOKNuyucjj4U1g",
         },
       }
     );
