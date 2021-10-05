@@ -15,7 +15,7 @@ const App = () => {
   const [type, setType] = useState("restaurants");
   const [rating, setRating] = useState("");
   useEffect(() => {
-    const filterd = places.filter((place) => place.rating > rating);
+    const filterd = places.filter((place) => Number(place.rating) > rating);
     setfilteredPlaces(filterd);
   }, [rating, places]);
 
