@@ -1,6 +1,6 @@
 import axios from "axios";
 // const URL = "https://travel-advisor.p.rapidapi.com/hotels/list-in-boundary";
-
+require("dotenv").config();
 const getPlacesData = async (type, ne, sw) => {
   try {
     const {
